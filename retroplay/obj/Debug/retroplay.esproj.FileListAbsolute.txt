@@ -1,0 +1,2 @@
+C:\Users\vitux\source\repos\retroPlay\retroPlay\obj\Debug\retroplay.esproj.SuggestedBindingRedirects.cache
+C:\Users\vitux\source\repos\retroPlay\retroPlay\obj\Debug\retroplay.esproj.CoreCompileInputs.cache
