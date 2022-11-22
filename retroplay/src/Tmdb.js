@@ -6,8 +6,8 @@ const API_BASE = 'https://api.themoviedb.org/3';
  *  - Originais da netflix
  *  - recomendados(trending)
  *  - em alta (top rated)
- *  - ação
- *  - Comédia
+ *  - aï¿½ï¿½o
+ *  - Comï¿½dia
  *  - terror
  *  - romance
  *  - documentarios
@@ -29,7 +29,7 @@ export default {
             },
             {
                 slug: 'trending',
-                title: 'Recomendados para Você',
+                title: 'Recomendados para Vocï¿½',
                 items: await basicFetch(`/trending/all/week?language=pt-BR&api_key=${API_KEY}`)
             },
             {
@@ -39,12 +39,12 @@ export default {
             },
             {
                 slug: 'action',
-                title: 'Ação',
+                title: 'Aï¿½ï¿½o',
                 items: await basicFetch(`/discover/movie?with_genres=28&language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'comedy',
-                title: 'Comédia',
+                title: 'Comï¿½dia',
                 items: await basicFetch(`/discover/movie?with_genres=35&language=pt-BR&api_key=${API_KEY}`)
             },
             {
@@ -59,7 +59,7 @@ export default {
             },
             {
                 slug: 'documentary',
-                title: 'Documentários',
+                title: 'Documentï¿½rios',
                 items: await basicFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
             },
         ];
@@ -77,6 +77,11 @@ export default {
             }
         }
 
+        return info;
+    },
+    getMoviebyId: async (movieId) => {
+        let info = {};
+        info = await basicFetch(`${movieId}?api_key=${API_KEY}`);
         return info;
     }
     }

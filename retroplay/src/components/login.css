@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -33,7 +33,7 @@ body {
 
 /* Header */
 body>header {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.158)), linear-gradient(to top, rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.007)), url(back.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.158)), linear-gradient(to top, rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.007)), url(./img/bg-login.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -179,19 +179,16 @@ header .container .banner p:last-of-type {
     cursor: pointer;
 }
 
-.group-form form .form-g .form-footer {
+.group-form form .form-g {
     margin-top: 20px;
 }
 
-.group-form form .form-g .form-footer input[type=checkbox] {
+.group-form form .form-g input[type=checkbox] {
     float: left;
     outline: none;
     border: none;
 }
 
-.form-footer p {
-    float: right;
-}
 
 .box-description {
     margin-top: 60px;
