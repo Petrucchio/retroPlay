@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import './login.css';
-import {Route ,Routes, Link} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import  App  from './App';
 import logo from "./img/logo.png";
 
@@ -39,7 +39,7 @@ return(
                     </form>
                 <div className="box-description">
                     <nav>
-                    <p>Novo para RetroPlay?<Link to ="/submit"><span> Increva-se agora</span></Link>.</p>
+                    <p>Novo para RetroPlay?<Link to ="/Subscribe"><span> Increva-se agora</span></Link>.</p>
                     </nav>
                 </div>
             </div>
