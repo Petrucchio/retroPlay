@@ -7,6 +7,7 @@ import mobile from "./img/mobile-0819.jpg";
 import boxshot from "./img/boxshot.png";
 import download from "./img/download-icon.gif";
 import kids from "./img/kids.png";
+import { Link } from "react-router-dom";
 
 
     export default () => {
@@ -18,19 +19,12 @@ import kids from "./img/kids.png";
                 <div className="logo">
                     <a href="/" title="Pagina Inicial"><img alt="Logo" src={logo}/></a>
                 </div>
-                <div className="sign-in">
-                    <a href="/"><button>Entrar</button></a>
-                </div>
+                <Link to="/Create" >
+                    <div className="banner-footer">
+                        <button>Cadastrar</button>
+                    </div>
+                </Link>
             </nav>
-            <section className="banner">
-                <h1>Filmes ilimitados, tv e mais</h1>
-                <p>Assista qualque coisa, cancele a qualquer momento.</p>
-                <p>Pronto,para assistir? Digite seu e-mail para criar ou reiniciar sua assoçiação.</p>
-                <div className="banner-footer">
-                    <input type="email" name="Email" placeholder="Endereço de email" required />
-                    <button>Iniciar</button>
-                </div>
-            </section>
         </div>
     <section className="sessao-1">
         <div className="container-sessao">
@@ -98,10 +92,11 @@ import kids from "./img/kids.png";
                     <div className="container">
                         <div className="email">
                             <p>Pronto para assistir? Digite seu e-mail para criar ou reiniciar sua associação.</p>
+                            <Link to="/Create" >
                             <div className="banner-footer">
-                                <input type="email" name="Email" placeholder="Endereço de email"/>
-                                <button>Iniciar</button>
+                                <button>Cadastrar</button>
                             </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
